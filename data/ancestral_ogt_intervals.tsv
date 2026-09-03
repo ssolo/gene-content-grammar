@@ -1,0 +1,17 @@
+node	reconstruction	arm	n_cogs	ogt_C	ci95_lo	ci95_hi	sd_total	sd_within	sd_between	conf95_lo	conf95_hi
+LBCA	sparse (reconciliation)	input	493	48.6	28.7	68.6	10.2	8.4	5.8	37.4	59.9
+LBCA	sparse (reconciliation)	denoised	1519	62.9	43.9	82.0	9.7	9.6	1.3	51.7	74.2
+LBCA	copy-number min-1	input	2809	45.3	17.6	73.0	14.1	11.4	8.3	34.0	56.6
+LBCA	copy-number min-1	denoised	1836	67.1	40.4	93.7	13.6	13.2	3.4	55.8	78.3
+LBCA	copy-number min-4	input	2732	45.2	17.3	73.1	14.2	11.6	8.2	34.0	56.5
+LBCA	copy-number min-4	denoised	1776	66.9	41.1	92.7	13.2	12.9	2.9	55.7	78.2
+LACA	combined root	input	832	53.9	31.1	76.6	11.6	10.8	4.2	42.6	65.1
+LACA	combined root	denoised	1023	83.0	48.6	117.4	17.6	16.4	6.3	71.7	94.3
+LACA	Euryarchaeota (ML)	input	2112	57.7	27.5	87.9	15.4	12.7	8.7	46.4	68.9
+LACA	Euryarchaeota (ML)	denoised	1321	84.0	47.3	120.7	18.7	17.2	7.5	72.7	95.2
+LACA	Euryarchaeota (uniform)	input	805	65.0	39.9	90.0	12.8	11.8	4.8	53.7	76.2
+LACA	Euryarchaeota (uniform)	denoised	909	80.9	47.8	114.1	16.9	15.6	6.4	69.7	92.2
+LACA	copy-number min-1	input	2466	53.2	23.9	82.5	15.0	11.7	9.3	41.9	64.4
+LACA	copy-number min-1	denoised	1708	78.0	45.2	110.8	16.7	15.0	7.5	66.7	89.2
+LACA	copy-number min-4	input	2240	56.1	27.6	84.6	14.6	12.0	8.2	44.8	67.4
+LACA	copy-number min-4	denoised	1405	82.8	46.3	119.4	18.6	17.0	7.6	71.6	94.1

@@ -1,0 +1,17 @@
+{
+  "taxon": "511145",
+  "ckpt": "gsd_results_nohidden_finetune_chain_T8to20_split1",
+  "model": "nohidden",
+  "n_pairs": 2214460,
+  "n_pos": 4330,
+  "prev": 0.0019553299675767457,
+  "thr": 700,
+  "AUROC_J": 0.616720227360833,
+  "AUROC_conf": 0.6513759618228178,
+  "AUROC_J+conf_linear": 0.6183465439196627,
+  "AUPRC_J+conf_linear": 0.04271407038458328,
+  "coef_J": 0.35009677063389955,
+  "coef_conf": -0.11316498377048072,
+  "AUROC_J+conf_gbt": 0.7475954080805065,
+  "AUPRC_J+conf_gbt": 0.017082959321504887
+}

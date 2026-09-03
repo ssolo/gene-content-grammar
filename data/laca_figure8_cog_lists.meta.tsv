@@ -1,0 +1,10 @@
+key	value
+figure	Figure 8 (fig:laca_jacc) -- five LACA reconstructions converge
+present_threshold	0.5
+mean_offdiag_before	0.2341
+mean_offdiag_after	0.7135
+label::combined_root	combined root
+label::euryarch_ml	Euryarchaeota (ML)
+label::euryarch_unif	Euryarchaeota (uniform)
+label::copynum_min1	copy-number (min-1)
+label::copynum_min4	copy-number (min-4)

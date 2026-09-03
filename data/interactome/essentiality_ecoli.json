@@ -1,0 +1,13 @@
+{
+  "taxon": "511145",
+  "model": "nohidden_higher_order",
+  "n_present": 2105,
+  "n_labeled": 2026,
+  "n_essential": 320,
+  "prevalence": 0.1579466929911155,
+  "AUROC_demand": 0.6385899032825323,
+  "AUPRC_demand": 0.22243597939636117,
+  "AUROC_field_h": 0.38495017584994135,
+  "AUPRC_field_h": 0.12395787614188078,
+  "AUROC_demand_resid_h": 0.6245658704572098
+}

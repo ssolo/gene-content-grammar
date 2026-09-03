@@ -1,0 +1,49 @@
+phenotype	node	reconstruction	arm	n_cogs	n_feature_cogs	value	sd	call
+aerobicity	LBCA	sparse (reconciliation)	input	493	480	0.0153	0.009	anaerobe
+aerobicity	LBCA	sparse (reconciliation)	denoised	1519	993	0.0005	0.0002	anaerobe
+aerobicity	LBCA	copy-number min-1	input	2809	1831	0.4977	0.1669	anaerobe
+aerobicity	LBCA	copy-number min-1	denoised	1836	1138	0.0013	0.0006	anaerobe
+aerobicity	LBCA	copy-number min-4	input	2732	1790	0.4348	0.208	anaerobe
+aerobicity	LBCA	copy-number min-4	denoised	1776	1095	0.0011	0.0005	anaerobe
+aerobicity	LACA	combined root	input	832	511	0.014	0.0174	anaerobe
+aerobicity	LACA	combined root	denoised	1023	613	0.0007	0.0004	anaerobe
+aerobicity	LACA	Euryarchaeota (ML)	input	2112	1245	0.1049	0.0627	anaerobe
+aerobicity	LACA	Euryarchaeota (ML)	denoised	1321	746	0.0006	0.0003	anaerobe
+aerobicity	LACA	Euryarchaeota (uniform)	input	805	492	0.0244	0.0176	anaerobe
+aerobicity	LACA	Euryarchaeota (uniform)	denoised	909	553	0.0009	0.0006	anaerobe
+aerobicity	LACA	copy-number min-1	input	2466	1456	0.4621	0.2393	anaerobe
+aerobicity	LACA	copy-number min-1	denoised	1708	997	0.0029	0.0014	anaerobe
+aerobicity	LACA	copy-number min-4	input	2240	1318	0.3353	0.2276	anaerobe
+aerobicity	LACA	copy-number min-4	denoised	1405	819	0.0011	0.0004	anaerobe
+cell_envelope	LBCA	sparse (reconciliation)	input	493	475	0.9419	0.0278	Diderm
+cell_envelope	LBCA	sparse (reconciliation)	denoised	1519	990	0.9984	0.0007	Diderm
+cell_envelope	LBCA	copy-number min-1	input	2809	1824	0.994	0.0026	Diderm
+cell_envelope	LBCA	copy-number min-1	denoised	1836	1133	0.9971	0.001	Diderm
+cell_envelope	LBCA	copy-number min-4	input	2732	1782	0.9942	0.0023	Diderm
+cell_envelope	LBCA	copy-number min-4	denoised	1776	1090	0.998	0.001	Diderm
+cell_envelope	LACA	combined root	input	832	507	0.0716	0.0359	Monoderm
+cell_envelope	LACA	combined root	denoised	1023	610	0.0678	0.0497	Monoderm
+cell_envelope	LACA	Euryarchaeota (ML)	input	2112	1239	0.2161	0.1308	Monoderm
+cell_envelope	LACA	Euryarchaeota (ML)	denoised	1321	743	0.0974	0.0712	Monoderm
+cell_envelope	LACA	Euryarchaeota (uniform)	input	805	489	0.0849	0.0502	Monoderm
+cell_envelope	LACA	Euryarchaeota (uniform)	denoised	909	550	0.0762	0.0601	Monoderm
+cell_envelope	LACA	copy-number min-1	input	2466	1450	0.141	0.0756	Monoderm
+cell_envelope	LACA	copy-number min-1	denoised	1708	992	0.1368	0.106	Monoderm
+cell_envelope	LACA	copy-number min-4	input	2240	1312	0.2596	0.1523	Monoderm
+cell_envelope	LACA	copy-number min-4	denoised	1405	815	0.1038	0.0806	Monoderm
+OGT	LBCA	sparse (reconciliation)	input	493	493	48.6362	5.4666	48.6 C
+OGT	LBCA	sparse (reconciliation)	denoised	1519	1519	62.9131	1.252	62.9 C
+OGT	LBCA	copy-number min-1	input	2809	2809	45.3	7.8698	45.3 C
+OGT	LBCA	copy-number min-1	denoised	1836	1836	67.0689	3.2211	67.1 C
+OGT	LBCA	copy-number min-4	input	2732	2732	45.2232	7.7991	45.2 C
+OGT	LBCA	copy-number min-4	denoised	1776	1776	66.9115	2.7238	66.9 C
+OGT	LACA	combined root	input	832	832	53.8504	4.0035	53.9 C
+OGT	LACA	combined root	denoised	1023	1023	82.9961	5.9779	83.0 C
+OGT	LACA	Euryarchaeota (ML)	input	2112	2112	57.682	8.2731	57.7 C
+OGT	LACA	Euryarchaeota (ML)	denoised	1321	1321	83.9576	7.113	84.0 C
+OGT	LACA	Euryarchaeota (uniform)	input	805	805	64.9504	4.5224	65.0 C
+OGT	LACA	Euryarchaeota (uniform)	denoised	909	909	80.9473	6.0683	80.9 C
+OGT	LACA	copy-number min-1	input	2466	2466	53.1793	8.8019	53.2 C
+OGT	LACA	copy-number min-1	denoised	1708	1708	77.9908	7.0712	78.0 C
+OGT	LACA	copy-number min-4	input	2240	2240	56.0926	7.8015	56.1 C
+OGT	LACA	copy-number min-4	denoised	1405	1405	82.8324	7.1868	82.8 C

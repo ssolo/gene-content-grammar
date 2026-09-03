@@ -1,0 +1,85 @@
+============================================================================
+Calibration comparison: T20 NoHidden HO3  PRE vs MIX fine-tune
+Eval set: original split-N held-out, archaea only (--val-domain d__Archaea)
+============================================================================
+global_metrics found in splits: [1, 2, 3, 4, 6, 7, 8, 9, 10]
+cat_metrics found in splits:    [1, 2, 3, 4, 6, 7, 8, 9, 10]
+
+Splits aggregated: 9  (1, 2, 3, 4, 6, 7, 8, 9, 10)
+  PRE  ('hidden')  = T20 pre-FT
+  POST ('nohidden') = T20 mix-FT
+  (lower ECE/Brier/NLL/MCE = better calibration; delta = POST - PRE, negative = FT improved)
+
+=== ECE vs false-negative noise (mean +/- std across splits) ===
+    fn |           T20 pre-FT |           T20 mix-FT |  delta(post-pre) |  better
+---------------------------------------------------------------------------------
+  0.00 |      0.0091+/-0.0020 |      0.0084+/-0.0015 |          -0.0008 |    POST
+  0.10 |      0.0108+/-0.0020 |      0.0112+/-0.0021 |          +0.0004 |     PRE
+  0.25 |      0.0207+/-0.0059 |      0.0207+/-0.0056 |          +0.0000 |     PRE
+  0.50 |      0.0225+/-0.0061 |      0.0187+/-0.0039 |          -0.0038 |    POST
+  0.75 |      0.0286+/-0.0077 |      0.0219+/-0.0045 |          -0.0068 |    POST
+  0.90 |      0.0331+/-0.0095 |      0.0275+/-0.0065 |          -0.0056 |    POST
+   ALL |               0.0208 |               0.0181 |          -0.0028 |    POST
+
+=== BRIER vs false-negative noise (mean +/- std across splits) ===
+    fn |           T20 pre-FT |           T20 mix-FT |  delta(post-pre) |  better
+---------------------------------------------------------------------------------
+  0.00 |      0.0078+/-0.0015 |      0.0063+/-0.0008 |          -0.0015 |    POST
+  0.10 |      0.0175+/-0.0028 |      0.0171+/-0.0028 |          -0.0004 |    POST
+  0.25 |      0.0303+/-0.0059 |      0.0298+/-0.0058 |          -0.0006 |    POST
+  0.50 |      0.0439+/-0.0085 |      0.0408+/-0.0070 |          -0.0030 |    POST
+  0.75 |      0.0566+/-0.0107 |      0.0521+/-0.0085 |          -0.0045 |    POST
+  0.90 |      0.0647+/-0.0120 |      0.0603+/-0.0099 |          -0.0044 |    POST
+   ALL |               0.0368 |               0.0344 |          -0.0024 |    POST
+
+=== NLL vs false-negative noise (mean +/- std across splits) ===
+    fn |           T20 pre-FT |           T20 mix-FT |  delta(post-pre) |  better
+---------------------------------------------------------------------------------
+  0.00 |      0.0309+/-0.0049 |      0.0267+/-0.0028 |          -0.0042 |    POST
+  0.10 |      0.0684+/-0.0126 |      0.0691+/-0.0141 |          +0.0007 |     PRE
+  0.25 |      0.1132+/-0.0251 |      0.1120+/-0.0245 |          -0.0013 |    POST
+  0.50 |      0.1540+/-0.0314 |      0.1427+/-0.0250 |          -0.0114 |    POST
+  0.75 |      0.1951+/-0.0386 |      0.1781+/-0.0296 |          -0.0170 |    POST
+  0.90 |      0.2244+/-0.0444 |      0.2051+/-0.0342 |          -0.0193 |    POST
+   ALL |               0.1310 |               0.1223 |          -0.0087 |    POST
+
+=== MCE vs false-negative noise (mean +/- std across splits) ===
+    fn |           T20 pre-FT |           T20 mix-FT |  delta(post-pre) |  better
+---------------------------------------------------------------------------------
+  0.00 |      0.0899+/-0.0191 |      0.0865+/-0.0154 |          -0.0034 |    POST
+  0.10 |      0.0439+/-0.0337 |      0.0510+/-0.0328 |          +0.0071 |     PRE
+  0.25 |      0.0909+/-0.0448 |      0.0894+/-0.0489 |          -0.0015 |    POST
+  0.50 |      0.0808+/-0.0399 |      0.0429+/-0.0189 |          -0.0379 |    POST
+  0.75 |      0.1037+/-0.0369 |      0.0525+/-0.0150 |          -0.0512 |    POST
+  0.90 |      0.0853+/-0.0293 |      0.0665+/-0.0227 |          -0.0188 |    POST
+   ALL |               0.0824 |               0.0648 |          -0.0176 |    POST
+
+
+=== Per-category ECE at fn=0.25 (mean across splits; delta = POST - PRE) ===
+ cat description                          T20 pre-FT   T20 mix-FT      delta
+----------------------------------------------------------------------------
+   Z Cytoskeleton                             0.0323       0.0252    -0.0071
+   A RNA processing and modification          0.0540       0.0469    -0.0071
+   B Chromatin structure and dynamics         0.0453       0.0389    -0.0064
+   I Lipid transport and metabolism           0.0359       0.0331    -0.0028
+   H Coenzyme transport and metabolism        0.0423       0.0396    -0.0027
+   R General function prediction only         0.0326       0.0300    -0.0027
+   C Energy production and conversion         0.0327       0.0303    -0.0024
+   S Function unknown                         0.0160       0.0143    -0.0016
+   O Posttranslational modification, pr       0.0342       0.0326    -0.0016
+   Q Secondary metabolites biosynthesis       0.0184       0.0171    -0.0013
+   K Transcription                            0.0343       0.0330    -0.0013
+   F Nucleotide transport and metabolis       0.0508       0.0496    -0.0013
+   T Signal transduction mechanisms           0.0209       0.0197    -0.0012
+   P Inorganic ion transport and metabo       0.0264       0.0253    -0.0011
+   V Defense mechanisms                       0.0259       0.0248    -0.0011
+   L Replication, recombination and rep       0.0435       0.0424    -0.0010
+   D Cell cycle control, cell division,       0.0229       0.0218    -0.0010
+   E Amino acid transport and metabolis       0.0359       0.0349    -0.0010
+   G Carbohydrate transport and metabol       0.0272       0.0263    -0.0008
+   W Extracellular structures                 0.0157       0.0151    -0.0006
+   N Cell motility                            0.0135       0.0130    -0.0005
+   U Intracellular trafficking, secreti       0.0197       0.0192    -0.0005
+   M Cell wall/membrane/envelope biogen       0.0206       0.0202    -0.0004
+   X Mobilome: prophages, transposons         0.0104       0.0103    -0.0001
+   J Translation, ribosomal structure a       0.0541       0.0546    +0.0005

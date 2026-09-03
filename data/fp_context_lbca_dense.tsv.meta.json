@@ -1,0 +1,129 @@
+{
+  "mode": "ancestral",
+  "command": [
+    "scripts/fp_context_diagnostics.py",
+    "ancestral",
+    "--input-prob-tsv",
+    "marg_soft.tsv",
+    "--models-template",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split{split}/model_ho3.pth",
+    "--splits",
+    "1-10",
+    "--candidate-threshold",
+    "0",
+    "--anchor-pred-tsv",
+    "marg_sparse.tsv",
+    "--anchor-threshold",
+    "0.9",
+    "--dropout-runs",
+    "32",
+    "--drop-frac",
+    "0.5",
+    "--device",
+    "cuda",
+    "--out",
+    "data/fp_context_lbca_dense.tsv"
+  ],
+  "timestamp": "2026-06-09T22:11:40",
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "models": [
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split1/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split2/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split3/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split4/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split5/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split6/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split7/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split8/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split9/model_ho3.pth",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split10/model_ho3.pth"
+  ],
+  "splits": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "model_meta": [
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 1
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 2
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 3
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 4
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 5
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 6
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 7
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 8
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 9
+    },
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 10
+    }
+  ],
+  "mask_semantics": {
+    "neutral": "x_i=0 (no evidence)",
+    "absent": "x_i=-1 (input votes absent)",
+    "note": "forward recomputes module/field/skip gates from the perturbed input, so masking i removes it from all conditioning (intended cavity)"
+  },
+  "candidate_threshold": 0.0,
+  "n_candidates": 2809,
+  "dropout_runs": 32,
+  "drop_frac": 0.5,
+  "seed": 42,
+  "input_source": "input-prob-tsv marg_soft.tsv",
+  "anchor_pred_tsv": "marg_sparse.tsv",
+  "anchor_threshold": 0.9
+}

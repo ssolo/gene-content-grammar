@@ -1,0 +1,17 @@
+{
+  "taxon": "511145",
+  "ckpt": "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_ecolizoom_intermediate",
+  "model": "nohidden_higher_order",
+  "T": 20,
+  "n_labeled": 2026,
+  "n_essential": 320,
+  "prevalence": 0.1579466929911155,
+  "AUROC_demand_final": 0.7416865108440797,
+  "AUROC_field_h": 0.376291398007034,
+  "AUROC_traj_logreg": 0.7748662807737398,
+  "AUROC_traj+struct_logreg": 0.7780425703399766,
+  "AUPRC_traj+struct_logreg": 0.51904768237151,
+  "AUROC_traj_gbt": 0.8049567702227433,
+  "AUROC_traj+struct_gbt": 0.810065577373974,
+  "AUPRC_traj+struct_gbt": 0.5716870614176355
+}

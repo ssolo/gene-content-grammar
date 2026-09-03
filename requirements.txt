@@ -1,0 +1,20 @@
+# Runtime + test dependencies for ising-denoiser.
+#
+# Versions left unpinned by default — the target cluster's `python/3.11.x`
+# environment module determines which manylinux/CUDA wheels resolve.
+# If you need a reproducible pin, do `pip freeze > requirements.lock.txt`
+# inside an activated venv after a successful install.
+#
+# Note: pyarrow is needed by pandas to read/write the `.feather`
+# COG_train*/COG_val* files used throughout the trainers.
+
+torch
+numpy
+pandas
+pyarrow
+scipy
+matplotlib
+Pillow
+scikit-learn
+openpyxl
+pytest

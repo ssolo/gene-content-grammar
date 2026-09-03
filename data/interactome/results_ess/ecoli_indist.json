@@ -1,0 +1,17 @@
+{
+  "taxon": "511145",
+  "ckpt": "gsd_results_nohidden_finetune_chain_T8to20_split1",
+  "model": "nohidden",
+  "T": 20,
+  "n_labeled": 2026,
+  "n_essential": 320,
+  "prevalence": 0.1579466929911155,
+  "AUROC_demand_final": 0.5373241500586166,
+  "AUROC_field_h": 0.31846058030480656,
+  "AUROC_traj_logreg": 0.8086587778429073,
+  "AUROC_traj+struct_logreg": 0.8495090855803048,
+  "AUPRC_traj+struct_logreg": 0.5906974907215191,
+  "AUROC_traj_gbt": 0.8127472889800703,
+  "AUROC_traj+struct_gbt": 0.84386356975381,
+  "AUPRC_traj+struct_gbt": 0.6028578698501535
+}

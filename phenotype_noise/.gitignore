@@ -1,0 +1,9 @@
+# external data + heavy artifacts (not committed; rebuilt/pulled per README)
+*.pkl
+*.npz
+*.tsv
+*.csv
+*.ipynb
+splits/
+models/
+results/

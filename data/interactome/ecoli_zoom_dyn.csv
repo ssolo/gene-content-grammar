@@ -1,0 +1,7 @@
+rank,name,taxon,model,n_present,n_pairs,J_exp700,J_exp900,J_comb900,dynT1_exp700,dynT1_comb900,dynT2_exp700,dynT2_comb900,dynT3_exp700,dynT3_comb900,dynT5_exp700,dynT5_comb900,best_dyn_exp700,best_T,gain_over_J_exp700
+phylum,E. coli zoom phylum,511145,nohidden_higher_order,2105,2214460,0.6246,0.6718,0.7079,0.537,0.612,0.5221,0.5823,0.5462,0.5611,0.4736,0.5247,0.5462,3,-0.0784
+class,E. coli zoom class,511145,nohidden_higher_order,2105,2214460,0.6251,0.6723,0.7082,0.5394,0.6137,0.5308,0.5863,0.5445,0.5595,0.4699,0.5202,0.5445,3,-0.0806
+order,E. coli zoom order,511145,nohidden_higher_order,2105,2214460,0.6255,0.6725,0.7085,0.5389,0.613,0.5306,0.5842,0.5418,0.5553,0.4665,0.5176,0.5418,3,-0.0837
+intermediate,E. coli zoom intermediate,511145,nohidden_higher_order,2105,2214460,0.6245,0.6715,0.708,0.5354,0.612,0.5237,0.5842,0.5442,0.5681,0.4644,0.5177,0.5442,3,-0.0803
+family,E. coli zoom family,511145,nohidden_higher_order,2105,2214460,0.6257,0.6727,0.7086,0.5382,0.6127,0.519,0.5744,0.5458,0.5563,0.4634,0.5136,0.5458,3,-0.0799
+species,E. coli zoom species,511145,nohidden_higher_order,2105,2214460,0.6243,0.6713,0.708,0.5305,0.605,0.514,0.5565,0.5386,0.5477,0.4686,0.5088,0.5386,3,-0.0857

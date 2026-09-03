@@ -1,0 +1,64 @@
+{
+  "mode": "extant",
+  "command": [
+    "scripts/fp_context_diagnostics.py",
+    "extant",
+    "--domain",
+    "d__Bacteria",
+    "--genome",
+    "Escherichia coli",
+    "--fn",
+    "0.9",
+    "--fp",
+    "0.05",
+    "--fp-mode",
+    "marginal",
+    "--models-template",
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split{split}/model_ho3.pth",
+    "--splits",
+    "1-10",
+    "--dropout-runs",
+    "32",
+    "--drop-frac",
+    "0.5",
+    "--device",
+    "cuda",
+    "--out",
+    "data/fp_context_ecoli_marginal.tsv"
+  ],
+  "timestamp": "2026-06-09T21:51:05",
+  "torch": "2.6.0+cu124",
+  "device": "cuda",
+  "models": [
+    "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_split5/model_ho3.pth"
+  ],
+  "splits": [
+    5
+  ],
+  "model_meta": [
+    {
+      "cls": "nohidden_higher_order",
+      "T": 20,
+      "onsager": "full",
+      "split": 5
+    }
+  ],
+  "mask_semantics": {
+    "neutral": "x_i=0 (no evidence)",
+    "absent": "x_i=-1 (input votes absent)",
+    "note": "forward recomputes module/field/skip gates from the perturbed input, so masking i removes it from all conditioning (intended cavity)"
+  },
+  "candidate_threshold": 0.5,
+  "n_candidates": 363,
+  "dropout_runs": 32,
+  "drop_frac": 0.5,
+  "seed": 42,
+  "genome": "s__Escherichia coli_F",
+  "accession": "RS_GCF_000194175.1",
+  "held_out_split": 5,
+  "fn": 0.9,
+  "fp": 0.05,
+  "fp_mode": "marginal",
+  "n_true_input": 233,
+  "n_known_fp": 130
+}

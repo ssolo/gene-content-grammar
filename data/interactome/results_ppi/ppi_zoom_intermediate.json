@@ -1,0 +1,17 @@
+{
+  "taxon": "511145",
+  "ckpt": "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_ecolizoom_intermediate",
+  "model": "nohidden_higher_order",
+  "n_pairs": 2214460,
+  "n_pos": 4330,
+  "prev": 0.0019553299675767457,
+  "thr": 700,
+  "AUROC_J": 0.6318265323320358,
+  "AUROC_conf": 0.7839707315451718,
+  "AUROC_J+conf_linear": 0.6388621833861382,
+  "AUPRC_J+conf_linear": 0.041653904581431374,
+  "coef_J": 0.3762172133636351,
+  "coef_conf": 0.09679985450143401,
+  "AUROC_J+conf_gbt": 0.833714401540695,
+  "AUPRC_J+conf_gbt": 0.020555432821035703
+}

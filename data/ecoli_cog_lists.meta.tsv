@@ -1,0 +1,15 @@
+key	value
+species	Escherichia coli
+model_label	bac-FT-fp-marginal-HQ (split 5)
+truth_total_genes	2178
+fp	0.01
+fn_levels	0.4,0.6,0.8
+call_threshold	0.5
+n_cogs	4789
+source_tsv	analysis/leakage_audit/scratch_ecoli_split5/recover_ecoli_marginal_hq_split5_typical_fn468.tsv
+recall_fn04	0.7691
+precision_fn04	0.8533
+recall_fn06	0.7199
+precision_fn06	0.8435
+recall_fn08	0.5863
+precision_fn08	0.8862

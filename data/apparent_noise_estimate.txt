@@ -1,0 +1,18 @@
+=== LBCA / bac-FT (bacterial) ===
+  node: I=493 D=1508 kept=382 silenced=111 rescued=1126  rho=3.059 sigma=0.225
+  validation noise-meter (fN: rho, recall, s):
+    fN=0.50  rho=1.78  recall=0.89  s=0.001
+    fN=0.75  rho=3.33  recall=0.87  s=0.008
+    fN=0.90  rho=7.99  recall=0.86  s=0.011
+  -> apparent fN = 0.71   (recall* = 0.88, implied true size G = 1723)
+  -> apparent fP = 0.035   (108 spurious input families among 3066 truly absent;
+                          22.0% of the input is spurious after baseline correction)
+=== LACA / mix-FT (archaeal) ===
+  node: I=832 D=1039 kept=740 silenced=92 rescued=299  rho=1.249 sigma=0.111
+  validation noise-meter (fN: rho, recall, s):
+    fN=0.50  rho=1.74  recall=0.79  s=0.030
+    fN=0.75  rho=3.21  recall=0.73  s=0.065
+    fN=0.90  rho=5.51  recall=0.64  s=0.104
+  -> apparent fN = 0.50  [EXTRAPOLATED beyond curve]   (recall* = 0.79, implied true size G = 1311)
+  -> apparent fP = 0.020   (70 spurious input families among 3478 truly absent;
+                          8.4% of the input is spurious after baseline correction)

@@ -1,0 +1,429 @@
+{
+  "policy": {
+    "output_present": 0.5,
+    "count_input": ">0.50",
+    "reconciliation": "qualified by confidence p"
+  },
+  "recons": {
+    "soft-trim-min1": {
+      "output": 1836,
+      "kind": "count",
+      "input": 2014,
+      "added": 216,
+      "removed": 394,
+      "kept": 1620
+    },
+    "soft-trim-min4": {
+      "output": 1776,
+      "kind": "count",
+      "input": 1981,
+      "added": 186,
+      "removed": 391,
+      "kept": 1590
+    },
+    "sparse-rescue": {
+      "output": 1519,
+      "kind": "reconciliation",
+      "removal_by_confidence": [
+        {
+          "p": 0.01,
+          "input_n": 493,
+          "kept": 374,
+          "removed": 119,
+          "removed_frac": 0.2413793103448276
+        },
+        {
+          "p": 0.02,
+          "input_n": 247,
+          "kept": 203,
+          "removed": 44,
+          "removed_frac": 0.17813765182186234
+        },
+        {
+          "p": 0.03,
+          "input_n": 176,
+          "kept": 144,
+          "removed": 32,
+          "removed_frac": 0.18181818181818182
+        },
+        {
+          "p": 0.04,
+          "input_n": 137,
+          "kept": 113,
+          "removed": 24,
+          "removed_frac": 0.17518248175182483
+        },
+        {
+          "p": 0.05,
+          "input_n": 107,
+          "kept": 92,
+          "removed": 15,
+          "removed_frac": 0.14018691588785046
+        },
+        {
+          "p": 0.07,
+          "input_n": 75,
+          "kept": 63,
+          "removed": 12,
+          "removed_frac": 0.16
+        },
+        {
+          "p": 0.1,
+          "input_n": 54,
+          "kept": 46,
+          "removed": 8,
+          "removed_frac": 0.14814814814814814
+        },
+        {
+          "p": 0.15,
+          "input_n": 32,
+          "kept": 26,
+          "removed": 6,
+          "removed_frac": 0.1875
+        },
+        {
+          "p": 0.2,
+          "input_n": 19,
+          "kept": 18,
+          "removed": 1,
+          "removed_frac": 0.05263157894736842
+        },
+        {
+          "p": 0.25,
+          "input_n": 15,
+          "kept": 14,
+          "removed": 1,
+          "removed_frac": 0.06666666666666667
+        },
+        {
+          "p": 0.3,
+          "input_n": 12,
+          "kept": 11,
+          "removed": 1,
+          "removed_frac": 0.08333333333333333
+        },
+        {
+          "p": 0.4,
+          "input_n": 9,
+          "kept": 8,
+          "removed": 1,
+          "removed_frac": 0.1111111111111111
+        },
+        {
+          "p": 0.5,
+          "input_n": 6,
+          "kept": 5,
+          "removed": 1,
+          "removed_frac": 0.16666666666666666
+        }
+      ],
+      "added_zero_support": 1145
+    }
+  },
+  "pairs": {
+    "soft-trim-min1_vs_sparse": {
+      "A": 1836,
+      "B": 1519,
+      "shared": 1433,
+      "jaccard": 0.7456,
+      "A_only": 403,
+      "B_only": 86,
+      "A_only_function": [
+        [
+          "GenFunc",
+          72
+        ],
+        [
+          "Unknown",
+          54
+        ],
+        [
+          "Carb",
+          26
+        ],
+        [
+          "Defense",
+          26
+        ],
+        [
+          "Signal",
+          26
+        ],
+        [
+          "PTM",
+          25
+        ],
+        [
+          "Replication",
+          21
+        ]
+      ],
+      "B_only_function": [
+        [
+          "Carb",
+          14
+        ],
+        [
+          "AminoAcid",
+          11
+        ],
+        [
+          "Coenzyme",
+          8
+        ],
+        [
+          "Energy",
+          7
+        ],
+        [
+          "Lipid",
+          7
+        ],
+        [
+          "Nucleotide",
+          7
+        ],
+        [
+          "Transcription",
+          6
+        ]
+      ],
+      "A_full": 81,
+      "A_half": 253,
+      "B_full": 77,
+      "B_half": 252,
+      "A_closes_vs_B": 12,
+      "B_closes_vs_A": 6,
+      "input_full": 86,
+      "eroded": [
+        [
+          "Cytochrome c oxidase",
+          0.833,
+          0.0
+        ],
+        [
+          "Cytochrome c oxidase, prokaryotes",
+          0.75,
+          0.0
+        ],
+        [
+          "Cytochrome aa3-600 menaquinol oxidase",
+          0.75,
+          0.0
+        ],
+        [
+          "Cytochrome o ubiquinol oxidase",
+          0.75,
+          0.0
+        ],
+        [
+          "Rebeccamycin biosynthesis, tryptophan => rebeccamycin",
+          0.6,
+          0.0
+        ],
+        [
+          "Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",
+          1.0,
+          0.5
+        ],
+        [
+          "Assimilatory nitrate reduction, nitrate => ammonia",
+          1.0,
+          0.5
+        ],
+        [
+          "Fumiquinazoline biosynthesis, tryptophan + alanine + anthranilate => fumiquinazoline",
+          0.75,
+          0.25
+        ],
+        [
+          "UDP-MurNAc biosynthesis, anhMurNAc => UDP-MurNAc",
+          1.0,
+          0.5
+        ],
+        [
+          "Pyrimidine degradation, uracil => 3-hydroxypropanoate",
+          1.0,
+          0.571
+        ],
+        [
+          "Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate",
+          1.0,
+          0.6
+        ],
+        [
+          "Serine biosynthesis, glycerate-3P => serine",
+          1.0,
+          0.6
+        ],
+        [
+          "Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",
+          0.8,
+          0.4
+        ],
+        [
+          "Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",
+          0.8,
+          0.4
+        ],
+        [
+          "Pentose phosphate pathway, archaea, fructose-6P => ribose-5P",
+          0.4,
+          0.0
+        ]
+      ]
+    },
+    "soft-trim-min4_vs_sparse": {
+      "A": 1776,
+      "B": 1519,
+      "shared": 1426,
+      "jaccard": 0.763,
+      "A_only": 350,
+      "B_only": 93,
+      "A_only_function": [
+        [
+          "GenFunc",
+          60
+        ],
+        [
+          "Unknown",
+          43
+        ],
+        [
+          "Signal",
+          25
+        ],
+        [
+          "Carb",
+          23
+        ],
+        [
+          "PTM",
+          23
+        ],
+        [
+          "Defense",
+          22
+        ],
+        [
+          "Energy",
+          19
+        ]
+      ],
+      "B_only_function": [
+        [
+          "Carb",
+          13
+        ],
+        [
+          "AminoAcid",
+          11
+        ],
+        [
+          "Coenzyme",
+          9
+        ],
+        [
+          "Energy",
+          8
+        ],
+        [
+          "Lipid",
+          7
+        ],
+        [
+          "GenFunc",
+          6
+        ],
+        [
+          "Nucleotide",
+          6
+        ]
+      ],
+      "A_full": 77,
+      "A_half": 251,
+      "B_full": 77,
+      "B_half": 252,
+      "A_closes_vs_B": 8,
+      "B_closes_vs_A": 7,
+      "input_full": 82,
+      "eroded": [
+        [
+          "Cytochrome c oxidase",
+          0.833,
+          0.0
+        ],
+        [
+          "Cytochrome c oxidase, prokaryotes",
+          0.75,
+          0.0
+        ],
+        [
+          "Cytochrome aa3-600 menaquinol oxidase",
+          0.75,
+          0.0
+        ],
+        [
+          "Cytochrome o ubiquinol oxidase",
+          0.75,
+          0.0
+        ],
+        [
+          "Rebeccamycin biosynthesis, tryptophan => rebeccamycin",
+          0.6,
+          0.0
+        ],
+        [
+          "Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",
+          1.0,
+          0.5
+        ],
+        [
+          "Assimilatory nitrate reduction, nitrate => ammonia",
+          1.0,
+          0.5
+        ],
+        [
+          "Fumiquinazoline biosynthesis, tryptophan + alanine + anthranilate => fumiquinazoline",
+          0.75,
+          0.25
+        ],
+        [
+          "UDP-MurNAc biosynthesis, anhMurNAc => UDP-MurNAc",
+          1.0,
+          0.5
+        ],
+        [
+          "Pyrimidine degradation, uracil => 3-hydroxypropanoate",
+          1.0,
+          0.571
+        ],
+        [
+          "Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate",
+          1.0,
+          0.6
+        ],
+        [
+          "Glucuronate pathway (uronate pathway)",
+          1.0,
+          0.6
+        ],
+        [
+          "Serine biosynthesis, glycerate-3P => serine",
+          1.0,
+          0.6
+        ],
+        [
+          "Ascorbate biosynthesis, animals, glucose-1P => ascorbate",
+          1.0,
+          0.6
+        ],
+        [
+          "Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",
+          0.8,
+          0.4
+        ]
+      ]
+    }
+  }
+}

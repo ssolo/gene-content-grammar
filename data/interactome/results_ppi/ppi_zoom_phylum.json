@@ -1,0 +1,17 @@
+{
+  "taxon": "511145",
+  "ckpt": "gsd_results_higher_order_nohidden_T20_bac_fp_marginal_hq_ecolizoom_phylum",
+  "model": "nohidden_higher_order",
+  "n_pairs": 2214460,
+  "n_pos": 4330,
+  "prev": 0.0019553299675767457,
+  "thr": 700,
+  "AUROC_J": 0.6319795153491697,
+  "AUROC_conf": 0.774367264550885,
+  "AUROC_J+conf_linear": 0.6380454797320033,
+  "AUPRC_J+conf_linear": 0.041773488172762135,
+  "coef_J": 0.3767708835148134,
+  "coef_conf": 0.09061890599422898,
+  "AUROC_J+conf_gbt": 0.8268452288381268,
+  "AUPRC_J+conf_gbt": 0.02022247994181934
+}
