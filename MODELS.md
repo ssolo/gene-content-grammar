@@ -42,7 +42,7 @@ Catalog
 | Pairwise T12 | NoHidden            | 25.94M | 12 | pairwise baseline | 0.627 | 0.050 | depth helps the deep tail |
 | Pairwise T16 | NoHidden            | 26.92M | 16 | pairwise baseline | 0.631 | 0.048 | -- |
 | Pairwise T20 | NoHidden            | 27.90M | 20 | pairwise baseline | 0.632 | 0.049 | best plain depth |
-| HO+hidden T8 | HigherOrder      | 31.72M | 8  | architecture test | 0.637 | 0.046 | hidden units add nothing over the no-hidden head |
+| HO+hidden T8 | HigherOrder      | 31.72M | 8  | architecture test | 0.637 | 0.046 | small gain at matched depth (+0.005 over HO T8) but dominated by depth: no-hidden T20 reaches 0.640 with 3M fewer params |
 | HO T8     | NoHidden+HO         | 25.79M | 8  | production family | 0.632 | 0.046 | -- |
 | HO T12    | NoHidden+HO         | 26.76M | 12 | production family | 0.636 | 0.047 | -- |
 | HO T16    | NoHidden+HO         | 27.74M | 16 | production family | 0.639 | 0.048 | -- |
