@@ -99,3 +99,28 @@ Genome of Escherichia coli K-12*, mBio 9:e02096-17, doi:10.1128/mBio.02096-17.
 Redistributed unmodified under the article's CC BY 4.0 licence, and used for the
 experimental essentiality calls in `scripts/interactome/essentiality_recon.py`.
 It is **not** covered by this repository's CC BY-NC licence; see LICENSE.
+
+## Ablation and phenotype score data
+
+Two directories hold the inputs behind reported numbers that are not per-COG
+tables.
+
+`ablation_j0/` — per-split parquets for the coupling ablation, in which every
+`J_ij` is set to zero at inference. Columns are `model_tag, family, split, T,
+fn, fp, step, MCC, F1, prec, rec, ece, brier, nll` and others; `step` runs
+1..T, and the reported values are read at the final step (`step == T`), the
+converged output. `nohidden_plain_T20_J0_split{1..10}.parquet` are the ablated
+runs; `nohidden_plain_T20_J0trained_split1.parquet` is the trained-from-scratch
+control. The matching full-model rows are the `nohidden_plain_T20` family in
+`spectra_calibration_all_summary.csv`, which carries the same `step` column;
+at `step == 20`, `fp = 0.01` it gives MCC 0.768 (`fn = 0.5`) and 0.632
+(`fn = 0.9`), the values the ablation is compared against.
+
+`phenotype_scores/` — per-split score caches for the three phenotypes
+(aerobicity, mono/diderm envelope, optimal growth temperature). Each pickle is
+a dict `{arm: {(f_N, f_P): {metric: (mean, sd)}}}` with arms `base_noisy`,
+`robust_noisy`, `base_denoised`, `robust_denoised`; metrics are `mcc`, `rmse`,
+`r2` and `calib_c` (calibration error in degrees C). Reported values are taken
+at `f_P = 0.01`. The trait classifiers that produced these scores are external
+to this project, so these caches are the route by which the phenotype figure
+and table are regenerated.
